@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Bank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bank-container">
+    <h1>💰 Digital Bank</h1>
+
+    <div class="account-card" id="account1">
+      <h2>Account: Srikanta</h2>
+      <p>Balance: ₹<span id="balance1">0</span></p>
+      <button onclick="manualDeposit(1)">Deposit</button>
+      <button onclick="manualWithdraw(1)">Withdraw</button>
+      <button onclick="transferAmount(1, 2)">Transfer to Ravi</button>
+    </div>
+
+    <div class="account-card" id="account2">
+      <h2>Account: Ravi</h2>
+      <p>Balance: ₹<span id="balance2">0</span></p>
+      <button onclick="manualDeposit(2)">Deposit</button>
+      <button onclick="manualWithdraw(2)">Withdraw</button>
+      <button onclick="transferAmount(2, 1)">Transfer to Srikanta</button>
+    </div>
+  </div>
+
+  <script src="bank.js"></script>
+</body>
+</html>
